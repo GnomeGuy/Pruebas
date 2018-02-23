@@ -29,6 +29,10 @@ public class Minion {
         habilidades[1] = habilidad2;
         this.jefe = jefe;
     }
+    public Minion(int ojos,boolean llevaGafas){
+        this.ojos=ojos;
+        this.llevaGafas=llevaGafas;
+    }
 
     @Override
     public String toString() {
@@ -83,6 +87,7 @@ public class Minion {
         result = 31 * result + Arrays.hashCode( habilidades );
         return result;
     }
+
 
     //Crear una funcion que obtengan todos los minions con mas de un ojo y sin gafas
 
